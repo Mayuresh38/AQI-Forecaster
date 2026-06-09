@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 # CONFIGURATION & SECURITY
 # ==========================================
 
-load_dotenv('api.env')
+load_dotenv('api.env', override=True)
 
 
 st.set_page_config(
