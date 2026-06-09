@@ -115,7 +115,7 @@ def fetch_live_city_data(city_name):
             st.sidebar.error(f"OpenAQ Error {loc_resp.status_code}: {loc_resp.text}")
             return None, False
 
-        locations = loc_resp.json().get('results', [])[:5] 
+        locations = loc_resp.json().get('results', [])[:7] 
         
         fetch_tasks = []
         for loc in locations:
@@ -136,7 +136,7 @@ def fetch_live_city_data(city_name):
             return param, []
 
         
-        with concurrent.futures.ThreadPoolExecutor(max_workers=7) as executor:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
             results = executor.map(fetch_sensor_data, fetch_tasks)
 
         for parameter, rows in results:
