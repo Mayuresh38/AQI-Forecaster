@@ -2,7 +2,7 @@
 
 A production-ready, end-to-end Machine Learning web application that fetches real-time atmospheric telemetry across major Indian cities and forecasts the next day's Air Quality Index (AQI) using a highly optimized XGBoost pipeline.
 
-🚀 **[Live Web Application Link]([(https://aqi-forecaster.streamlit.app/))**
+🚀 **[Live Web Application Link](https://aqi-forecaster.streamlit.app/)**
 
 ---
 
